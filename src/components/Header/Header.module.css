@@ -1,0 +1,36 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header h1 {
+  color: var(--txt-high-contrast);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+.theme {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.theme p {
+  color: var(--txt-low-contrast);
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.theme svg path {
+  fill: var(--txt-low-contrast);
+}
+
+.theme:hover p,
+.theme:hover svg path {
+  color: var(--theme-switch-btn-hover);
+  fill: var(--theme-switch-btn-hover);
+}
