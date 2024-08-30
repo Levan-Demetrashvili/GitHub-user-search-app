@@ -1,0 +1,55 @@
+.user {
+  display: flex;
+  gap: 36px;
+
+  background-color: var(--bg-secondary);
+  box-shadow: 0 16px 30px -10px rgba(70, 96, 187, 0.2);
+  border-radius: 15px;
+  padding: 3rem;
+}
+
+.imageBox {
+  height: 117px;
+}
+
+.imageBox img {
+  width: fit-content;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.user .about > section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.about section h1 {
+  color: var(--txt-high-contrast);
+  font-size: 26px;
+  line-height: 38px;
+  font-weight: 700;
+}
+
+.about section span {
+  color: var(--txt-low-contrast);
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+}
+
+.about span.userTag {
+  color: var(--primary);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.about p.bio {
+  color: var(--txt-low-contrast);
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  margin-block: 20px 32px;
+}

@@ -1,0 +1,23 @@
+.userLink {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.userLink a {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  color: var(--txt-mid-contrast);
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.userLink a:hover {
+  text-decoration-line: underline;
+}

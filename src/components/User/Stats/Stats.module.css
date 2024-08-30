@@ -1,0 +1,25 @@
+ul.userStats {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+
+  background-color: var(--bg);
+  border-radius: 10px;
+
+  padding: 1rem 2rem;
+  margin-bottom: 36px;
+}
+
+li.stat p {
+  color: var(--txt-mid-contrast);
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+li.stat h2 {
+  color: var(--txt-high-contrast);
+  font-size: 22px;
+  line-height: 33px;
+  font-weight: 700;
+}
