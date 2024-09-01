@@ -20,7 +20,9 @@
 
 .theme p {
   color: var(--txt-low-contrast);
+  font-size: 13px;
   font-weight: 700;
+  line-height: 18px;
   letter-spacing: 2.5px;
   text-transform: uppercase;
 }

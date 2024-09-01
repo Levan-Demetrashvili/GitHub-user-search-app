@@ -11,16 +11,21 @@ form.searchUserForm {
   padding: 10px;
 }
 
+:global(html.dark) form.searchUserForm {
+  box-shadow: none;
+}
+
 form.searchUserForm img {
-  margin-inline: 24px 22px;
+  margin-inline: 22px 24px;
 }
 
 form.searchUserForm input {
-  width: 100%;
   color: var(--txt-search);
+  background-color: transparent;
   font-size: 18px;
   line-height: 25px;
 
+  width: 100%;
   margin-right: 20px;
   padding: 6px 0;
   border: none;
