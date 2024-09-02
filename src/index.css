@@ -30,6 +30,7 @@ html {
   --bg-secondary: #fefefe;
   --theme-switch-btn-hover: #222731;
   --error: #f74646;
+  --input-box-shadow: 0 0 0px 1000px #fefefe inset;
 }
 
 html.dark {
@@ -44,4 +45,13 @@ html.dark {
   --bg-secondary: #1e2a47;
   --theme-switch-btn-hover: #90a4d4;
   --error: #f74646;
+  --input-box-shadow: 0 0 0px 1000px #1e2a47 inset;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--txt-search);
+  -webkit-box-shadow: var(--input-box-shadow);
+  transition: none;
 }
