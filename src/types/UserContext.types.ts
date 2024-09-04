@@ -5,7 +5,22 @@ export interface SearchUserContextType {
 }
 
 export interface UserContextType {
-  user: object;
+  user: UserType | null;
   isLoading: boolean;
   error: string;
+}
+
+export interface UserType {
+  login: string;
+  name: string;
+  bio: string;
+  avatar_url: string;
+  created_at: string;
+  public_repos: number;
+  followers: number;
+  following: number;
+  location: string;
+  blog: string;
+  twitter_username: string;
+  company: string;
 }

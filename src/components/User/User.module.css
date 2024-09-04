@@ -22,6 +22,10 @@
   border-radius: 50%;
 }
 
+.about {
+  width: 100%;
+}
+
 .user .about > section {
   display: flex;
   justify-content: space-between;

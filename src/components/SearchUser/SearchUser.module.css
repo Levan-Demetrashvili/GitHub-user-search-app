@@ -50,3 +50,12 @@ button.searchBtn {
 button.searchBtn:hover {
   background-color: var(--primary-hover);
 }
+
+p.error {
+  color: var(--error);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+  white-space: nowrap;
+  margin-right: 24px;
+}

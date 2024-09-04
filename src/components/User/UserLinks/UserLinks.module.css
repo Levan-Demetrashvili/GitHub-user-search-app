@@ -5,7 +5,8 @@
   gap: 18px;
 }
 
-.userLink a {
+.userLink a,
+.userLink span {
   width: fit-content;
   display: flex;
   align-items: center;
@@ -20,4 +21,10 @@
 
 .userLink a:hover {
   text-decoration-line: underline;
+}
+
+a.notAvaliable,
+span.notAvaliable {
+  cursor: text;
+  opacity: 0.5;
 }

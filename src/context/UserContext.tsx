@@ -1,6 +1,6 @@
 import { createContext, useContext, useState } from "react";
 import axios, { AxiosResponse } from "axios";
-import { SearchUserContextType, UserContextType } from "../types/UserContext.types";
+import { SearchUserContextType, UserContextType, UserType } from "../types/UserContext.types";
 import { API_URL } from "../configs/config";
 
 const UserContext = createContext<UserContextType | null>(null);
@@ -8,7 +8,7 @@ const SearchUserContext = createContext<SearchUserContextType | null>(null);
 
 function UserProvider({ children }: { children: React.ReactNode }) {
   const [username, setUsername] = useState("");
-  const [user, setUser] = useState({});
+  const [user, setUser] = useState<UserType | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
 
@@ -17,7 +17,7 @@ function UserProvider({ children }: { children: React.ReactNode }) {
   }
 
   async function getUserData() {
-    if (username.length < 3) return;
+    if (username.length < 3 || username.toLowerCase() === user?.login.toLowerCase()) return;
 
     try {
       setIsLoading(true);
