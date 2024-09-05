@@ -31,6 +31,7 @@ html {
   --theme-switch-btn-hover: #222731;
   --error: #f74646;
   --input-box-shadow: 0 0 0px 1000px #fefefe inset;
+  --link-icon-color: invert(40%) sepia(33%) saturate(727%) hue-rotate(178deg) brightness(91%) contrast(86%);
 }
 
 html.dark {
@@ -46,6 +47,7 @@ html.dark {
   --theme-switch-btn-hover: #90a4d4;
   --error: #f74646;
   --input-box-shadow: 0 0 0px 1000px #1e2a47 inset;
+  --link-icon-color: invert(100%) sepia(1%) saturate(7451%) hue-rotate(114deg) brightness(126%) contrast(113%);
 }
 
 input:-webkit-autofill,
@@ -53,5 +55,4 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus {
   -webkit-text-fill-color: var(--txt-search);
   -webkit-box-shadow: var(--input-box-shadow);
-  transition: none;
 }

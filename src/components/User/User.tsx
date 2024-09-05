@@ -8,7 +8,6 @@ import styles from "./User.module.css";
 
 export default function User() {
   const { isLoading, user } = useUser();
-
   if (isLoading) return <Spinner />;
   if (!user) return null;
 
@@ -23,7 +22,7 @@ export default function User() {
           <span className={styles.dateCreated}>{"Joined " + formatDate(user.created_at)}</span>
         </section>
         <span className={styles.userTag}>@{user.login}</span>
-        <p className={styles.bio}>{user.bio || "This profile has no bio"} </p>
+        <pre className={styles.bio}>{user.bio || "This profile has no bio"}</pre>
         <Stats user={user} />
         <UserLinks user={user} />
       </div>

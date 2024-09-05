@@ -28,3 +28,7 @@ span.notAvaliable {
   cursor: text;
   opacity: 0.5;
 }
+
+.userLink img {
+  filter: var(--link-icon-color);
+}
