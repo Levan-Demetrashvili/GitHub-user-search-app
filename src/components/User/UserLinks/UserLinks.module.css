@@ -10,11 +10,11 @@
   width: fit-content;
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 1.125rem;
 
   color: var(--txt-mid-contrast);
-  font-size: 15px;
-  line-height: 25px;
+  font-size: 0.938rem;
+  line-height: 160%;
   font-weight: 400;
   text-decoration: none;
 }

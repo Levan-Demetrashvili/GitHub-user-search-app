@@ -12,14 +12,15 @@ ul.userStats {
 
 li.stat p {
   color: var(--txt-mid-contrast);
-  font-size: 13px;
+  font-size: 0.813rem;
   line-height: 20px;
   font-weight: 400;
 }
 
 li.stat h2 {
   color: var(--txt-high-contrast);
-  font-size: 22px;
-  line-height: 33px;
+  font-size: 1.375rem;
+  line-height: 150%;
   font-weight: 700;
+  text-align: center;
 }

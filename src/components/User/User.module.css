@@ -1,6 +1,6 @@
 .user {
   display: flex;
-  gap: 36px;
+  gap: 2.25rem;
 
   background-color: var(--bg-secondary);
   box-shadow: 0 16px 30px -10px rgba(70, 96, 187, 0.2);
@@ -30,36 +30,57 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: 1.25rem;
   margin-bottom: 2px;
 }
 
 .about section h1 {
   color: var(--txt-high-contrast);
-  font-size: 26px;
-  line-height: 38px;
+  font-size: 1.625rem;
+  line-height: 140%;
   font-weight: 700;
 }
 
 .about section span {
   color: var(--txt-low-contrast);
   font-size: 15px;
-  line-height: 25px;
+  line-height: 160%;
   font-weight: 400;
 }
 
 .about span.userTag {
   color: var(--primary);
   font-size: 16px;
-  line-height: 24px;
+  line-height: 150%;
   font-weight: 400;
 }
 
 .about pre.bio {
   color: var(--txt-low-contrast);
   font-size: 15px;
-  line-height: 25px;
+  line-height: 160%;
   font-weight: 400;
   margin-block: 20px 32px;
   white-space: normal;
+}
+
+@media only screen and (max-width: 850px) {
+  .user {
+    flex-direction: column;
+  }
+  .user .about > section {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 2px;
+  }
+  .imageBox {
+    align-self: center;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .imageBox {
+    width: 90px;
+    height: 90px;
+  }
 }

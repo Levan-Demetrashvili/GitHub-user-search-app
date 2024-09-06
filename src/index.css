@@ -11,10 +11,6 @@
 
 body {
   background-color: var(--bg);
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 75px 96px;
 }
 
@@ -55,4 +51,19 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus {
   -webkit-text-fill-color: var(--txt-search);
   -webkit-box-shadow: var(--input-box-shadow);
+}
+
+@media only screen and (max-width: 670px) {
+  html {
+    font-size: 80%;
+  }
+  body {
+    padding: 24px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 70%;
+  }
 }
